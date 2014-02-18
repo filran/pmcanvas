@@ -6,11 +6,12 @@
     <!-- SCRIPTS -->
     <script type="text/javascript" src="scripts/jquery/jquery-2.1.0.js"></script>
     <script type="text/javascript" src="scripts/jquery-ui/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="scripts/plugins/zoom.js"></script>
     
     <!--  STYLES  -->
     <!--    <lik type="text/css" href="" rel="stylesheet" >-->
     <style type="text/css" >
-        body{ margin:0; padding:0; background-image:url(""); background-repeat:no-repeat;font-family:"Arial";}
+        body{ margin:0; padding:0; font-family:"Arial";}
 
         /* ESTILOS DO SORTABLE ======================= */
         #area > ul > li > ul , #postits{
@@ -34,7 +35,7 @@
         #pmcanvas h1{ font-size:16; margin:0; padding:0; font-family:"Arial"; } 
 
         /* RECEBERPOSTI ======================= */
-        .receberpostit{width:100%; height:100%;}
+        .receberpostit{width:100%; height:100%; font-size:10;}
 
         /* HEADER ======================= */
         #header > ul > li{ float:left; }
@@ -88,20 +89,65 @@
 
 
     </style>
-          <script>
-          $(function() {
+    
+    <script type="text/javascript">
+        $(function() {
+            //SORTABLE============================
             $( "ul.receberpostit" ).sortable({
               connectWith: "ul"
             });
-         
             $( ".receberpostit" ).disableSelection();
-          });
-          </script>
+
+
+            //ZOOM===========================
+            var $fatorMais = "*";
+            var $fatorMenos = "/";
+            var $escala = 1.2;
+            var $classeMais = ".aumentar";
+            var $classeMenos = ".diminuir";
+
+            //MAIS
+            $($classeMais).zoom($fatorMais,$escala,"#pmcanvas","xy");
+            
+            $($classeMais).zoom($fatorMais,$escala,"#just","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#prod","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#stake","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#premissas","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#riscos","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#obj","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#requisitos","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#equipe","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#entregas","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#tempo","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#beneficios","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#restricoes","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#custos","xy");
+
+            //MENOS
+            $($classeMenos).zoom($fatorMenos,$escala,"#pmcanvas","xy");
+            
+            $($classeMenos).zoom($fatorMenos,$escala,"#just","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#prod","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#stake","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#premissas","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#riscos","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#obj","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#requisitos","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#equipe","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#entregas","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#tempo","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#beneficios","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#restricoes","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#custos","xy");
+
+        });
+    </script>
+    
 </head>
 <body>
 
-<div id="fundo" style="z-index:-1; position:absolute; margin:0 auto 0 auto; width:100%; text-align:left;"><img src="off/layout_1.jpg"></div>
-
+<a href="#" class="aumentar">Aumentar</a>
+<a href="#" class="diminuir">Diminuir</a>
  
 <ul id="pmcanvas">
     <li id="header">
