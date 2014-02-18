@@ -1,0 +1,181 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PM CANVAS 2.0</title>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="../scripts/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script>
+    
+    <!--  STYLES  -->
+    <!--    <lik type="text/css" href="" rel="stylesheet" >-->
+    <style type="text/css" >
+        body{ margin:0; padding:0; background-image:url(""); background-repeat:no-repeat;font-family:"Arial";}
+
+        /* ESTILOS DO SORTABLE ======================= */
+        #area > ul > li > ul , #postits{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            background-color:#eee;
+            width:;
+        }
+        .receberpostit > li{
+            margin:0;
+            padding:0;
+            width:50px;
+            height:50px;
+            background-color:yellow;
+            float:left;
+        }
+
+        /* PM CANVAS ======================= */
+        #pmcanvas{ opacity:1; background-color:#eee; width:792px; height:560px;}
+        #pmcanvas , #pmcanvas ul{ list-style-type:none; margin:0; padding:4px; } 
+        #pmcanvas h1{ font-size:16; margin:0; padding:0; font-family:"Arial"; } 
+
+        /* HEADER ======================= */
+        #header > ul > li{ float:left; }
+        #gp{ width:316; }
+
+         /* AREA ======================= */      
+        #area{ clear:both; margin:0; padding:0;}
+        #area > ul > li{ border:solid 1px #aaa; float:left; background-color:white; }
+
+        /* TÓPICOS DO CANVAS ======================= */ 
+        /*definindo margem*/
+            #just , #prod , #stake , #premissas,
+            #obj, #requisitos, #equipe, #entregas { margin: 0 6px 6px 0; }
+
+        /*definindo posicao*/
+            #obj,#requisitos{ position:relative; top:-40px; }
+            #riscos, #tempo{margin:0px;}
+            #beneficios{ position:relative; left:-632px; top:-130px; }
+            #restricoes{ position:relative; top:-214px;; left:316px; }
+            #custos{ position:relative; top:-238px; left:322px; }
+        
+            
+        /*definindo largura*/
+            #just , #prod , #stake , #premissas , #riscos,
+            #obj, #requisitos, #equipe, #entregas, #tempo,
+            #beneficios, #custos { width:150px; }
+            #restricoes{ width:308px; }
+
+        /*definindo altura*/
+            #just , #prod{ height:140px; }
+            #stake , #premissas , #riscos{ height:180px; }
+            #obj{ height:108px; }
+            #requisitos{ height:358px; }
+            #equipe , #entregas{ height:228px; }
+            #tempo{ height:204px; }
+            #beneficios{ height:242px; }
+            #restricoes{ height:82px; }
+            #custos{ height:106px; }
+        
+        #stake{}
+        #premissas{}
+        #riscos{}
+
+        /* POSTITS ======================= */
+        #postits{ position: absolute; }
+
+        /* AREACANVAS e POSTITS ======================= */
+        #areaCanvas , #postits{ margin:0; padding:0; }
+
+
+    </style>
+          <script>
+          $(function() {
+            $( "ul.receberpostit" ).sortable({
+              connectWith: "ul"
+            });
+         
+            $( ".receberpostit" ).disableSelection();
+          });
+          </script>
+</head>
+<body>
+
+<div id="fundo" style="z-index:-1; position:absolute; margin:0 auto 0 auto; width:100%; text-align:left;"><img src="off/layout_1.jpg"></div>
+
+ 
+<ul id="pmcanvas">
+    <li id="header">
+        <ul>
+            <li id="gp"><h1>GP</h1></li>
+            <li id="pitch"><h1>PITCH</h1></li>
+        </ul>
+    </li>
+
+    <li id="area">
+        <ul>
+            <li id="just"><h1>JUSTIFICATIVAS</h1>
+                <ul class="receberpostit"><li></li></ul>
+            </li>
+
+            <li id="prod"><h1>PRODUTO</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="stake"><h1>STAKEHOLDERS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="premissas"><h1>PREMISSAS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="riscos"><h1>RISCOS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+
+
+            <li id="obj"><h1>OBJETIVOS SMART</h1>
+                <ul class="receberpostit"><li></li></ul>
+            </li>
+
+            <li id="requisitos"><h1>REQUISITOS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="equipe"><h1>EQUIPE</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="entregas"><h1>GRUPO DE ENTREGAS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+            
+            <li id="tempo"><h1>TEMPO</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+
+
+            <li id="beneficios"><h1>BENEFÍCIOS</h1>
+                <ul class="receberpostit"></ul>
+            </li>
+         
+            <li id="restricoes"><h1>RESTRIÇÕES</h1>
+                <ul class="receberpostit"></ul>
+            </li> 
+
+            <li id="custos"><h1>CUSTOS</h1>
+                <ul class="receberpostit"></ul>
+            </li>          
+        </ul>
+    </li>
+    
+</ul>
+ 
+<ul id="postits" class="receberpostit">
+    <li>Filipe</li>
+    <li>Arantes</li>
+    <li>Fernandes</li>
+</ul>
+
+
+</body>
+
+
+</html>
