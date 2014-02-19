@@ -91,7 +91,10 @@
     </style>
     
     <script type="text/javascript">
+        //alert("\"");
+        
         $(function() {
+        
             //SORTABLE============================
             $( "ul.receberpostit" ).sortable({
               connectWith: "ul"
@@ -102,43 +105,60 @@
             //ZOOM===========================
             var $fatorMais = "*";
             var $fatorMenos = "/";
-            var $escala = 1.2;
+            var $escala = 1.1;
             var $classeMais = ".aumentar";
             var $classeMenos = ".diminuir";
 
             //MAIS
-            $($classeMais).zoom($fatorMais,$escala,"#pmcanvas","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#pmcanvas");
             
-            $($classeMais).zoom($fatorMais,$escala,"#just","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#prod","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#stake","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#premissas","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#riscos","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#obj","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#requisitos","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#equipe","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#entregas","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#tempo","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#beneficios","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#restricoes","xy");
-            $($classeMais).zoom($fatorMais,$escala,"#custos","xy");
+            $($classeMais).zoom($fatorMais,$escala,"#just");
+            $($classeMais).zoom($fatorMais,$escala,"#prod");
+            $($classeMais).zoom($fatorMais,$escala,"#stake");
+            $($classeMais).zoom($fatorMais,$escala,"#premissas");
+            $($classeMais).zoom($fatorMais,$escala,"#riscos");
+            $($classeMais).zoom($fatorMais,$escala,"#obj");
+            $($classeMais).zoom($fatorMais,$escala,"#requisitos");
+            $($classeMais).zoom($fatorMais,$escala,"#equipe");
+            $($classeMais).zoom($fatorMais,$escala,"#entregas");
+            $($classeMais).zoom($fatorMais,$escala,"#tempo");
+            $($classeMais).zoom($fatorMais,$escala,"#beneficios");
+            $($classeMais).zoom($fatorMais,$escala,"#restricoes");
+            $($classeMais).zoom($fatorMais,$escala,"#custos");
+
+            $($classeMais).zoom($fatorMais,$escala,"#footer");
+            $($classeMais).zoom($fatorMais,$escala,"#autor");
+            $($classeMais).zoom($fatorMais,$escala,"#metodologia");
+
+            $($classeMais).zoom($fatorMais,$escala,"h1");
+
+            $($classeMais).zoom($fatorMais,$escala,".receberpostit li");
 
             //MENOS
-            $($classeMenos).zoom($fatorMenos,$escala,"#pmcanvas","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#pmcanvas");
             
-            $($classeMenos).zoom($fatorMenos,$escala,"#just","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#prod","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#stake","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#premissas","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#riscos","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#obj","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#requisitos","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#equipe","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#entregas","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#tempo","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#beneficios","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#restricoes","xy");
-            $($classeMenos).zoom($fatorMenos,$escala,"#custos","xy");
+            $($classeMenos).zoom($fatorMenos,$escala,"#just");
+            $($classeMenos).zoom($fatorMenos,$escala,"#prod");
+            $($classeMenos).zoom($fatorMenos,$escala,"#stake");
+            $($classeMenos).zoom($fatorMenos,$escala,"#premissas");
+            $($classeMenos).zoom($fatorMenos,$escala,"#riscos");
+            $($classeMenos).zoom($fatorMenos,$escala,"#obj");
+            $($classeMenos).zoom($fatorMenos,$escala,"#requisitos");
+            $($classeMenos).zoom($fatorMenos,$escala,"#equipe");
+            $($classeMenos).zoom($fatorMenos,$escala,"#entregas");
+            $($classeMenos).zoom($fatorMenos,$escala,"#tempo");
+            $($classeMenos).zoom($fatorMenos,$escala,"#beneficios");
+            $($classeMenos).zoom($fatorMenos,$escala,"#restricoes");
+            $($classeMenos).zoom($fatorMenos,$escala,"#custos");
+
+            $($classeMenos).zoom($fatorMenos,$escala,"#footer");
+            $($classeMenos).zoom($fatorMenos,$escala,"#autor");
+            $($classeMenos).zoom($fatorMenos,$escala,"#metodologia");
+
+            $($classeMenos).zoom($fatorMenos,$escala,"h1");
+
+            $($classeMenos).zoom($fatorMenos,$escala,".receberpostit li");
+            
 
         });
     </script>
