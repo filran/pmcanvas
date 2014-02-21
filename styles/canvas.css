@@ -1,6 +1,7 @@
+/*LAYOUT STANDARD ======================= */
 ul{ list-style-type: none; margin:0px; padding:0px;}
 
-body{ font-family:"Arial"; font-size:0.75em; margin:0; }
+body{ font-family:"Arial"; font-size:0.7em; margin:0;}
 
 #pmcanvas{ width: 800px; height:566px; background-color:gray; padding:0.5%;}
 
@@ -11,12 +12,6 @@ body{ font-family:"Arial"; font-size:0.75em; margin:0; }
 
 #area{ clear:both; }
 #area h1{ font-size: 1.2em; margin:0px; padding:0px; }
-
-#footer{ clear:both; margin:0.5% 0 0 0; }
-#autor, #metodologia{position:relative;}
-#autor{ left:-59.8%; font-size:0.72em; margin:0.6% 0 0 0; float:left;}
-#metodologia{ margin:0.4% 0 0 0; font-size:1.2em; font-weight:bold; float:right;}
-
 
 /*canvas's align */
 .alignareas{ float:left; }
@@ -37,8 +32,8 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 #tempo{ height:34%; }
 
 /*3-> for bottom's*/
-#beneficios{ height:40.5%; position:relative; left:-40.2%}
-#restricoes{ height:14.4%; left:40.2%; width:38.7%; position:relative; }
+#beneficios{ height:40.5%; position:relative; left:-40.2%;}
+#restricoes{ height:14.4%; left:40.2%; width:38.7%; position:relative;}
 #custos{ height:18.8%; position:relative; left:40.2%;}
 
 
@@ -50,3 +45,58 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 
 .margintoparea{ margin-top:0.5% ; }
 
+#footer{ clear:both; margin:0.5% 0 0 0; }
+#autor, #metodologia{position:relative;}
+#autor{ left:-59.8%; font-size:0.72em; margin:0.6% 0 0 0; float:left;}
+#metodologia{ margin:0.4% 0 0 0; font-size:1.2em; font-weight:bold; float:right;}
+
+
+/*settings receberpostit*/
+.receberpostit{ background-color:; width:100%; height:100%; }
+#just .receberpostit, #prod .receberpostit{ width:100%; height:89%; }
+#stake .receberpostit{height:74%; }
+#premissas .receberpostit, #riscos .receberpostit, #equipe .receberpostit{ height:92%; }
+#obj .receberpostit{ height:86%; }
+#beneficios .receberpostit{ height:93%; }
+#requisitos .receberpostit{ height:95%; }
+#entregas .receberpostit{ height:85%; }
+#tempo .receberpostit{ height:91%; }
+#restricoes .receberpostit{ height:81%; }
+#custos .receberpostit{ height:85%; }
+
+
+#postits{ float:left; position:absolute; }
+#area > ul > li .postit { width:97.3%; height:auto; margin:0 0 4px 0; padding:2px; }
+.postit:hover{ background-color:orange; cursor:pointer;}
+
+/*EXPAND ======================= */
+.backgroundexpand{ position:absolute; top:0; width:100%; height:100%; background-color:black; z-index:-1; background-color: rgba(0,0,0,0); }
+.bigpostit{
+    position:absolute; 
+    background-color:yellow; 
+    width:60%; 
+    height:70%; 
+    top:13%;
+    left:18%;
+    opacity:0;
+    padding:2%;
+    font-size:1.5em;
+}
+
+
+
+/* SORTABLE'S STYLES ======================= */
+#area > ul > li > ul , #postits{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.postit{
+    width:50px;
+    height:50px;
+    background-color:yellow;
+    margin:4px;
+    padding:4px;
+    float:left;
+}

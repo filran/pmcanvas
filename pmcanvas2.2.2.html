@@ -8,6 +8,7 @@
     <script type="text/javascript" src="scripts/jquery-ui/jquery-ui-1.10.4.custom.js"></script>
     <script type="text/javascript" src="scripts/plugins/zoom.js"></script>
     <script type="text/javascript" src="scripts/plugins/applyTop.js"></script>
+    <script type="text/javascript" src="scripts/plugins/expand.js"></script>
     <script type="text/javascript">
         $(function(){
             /*applying top*/
@@ -18,6 +19,20 @@
             $("#custos").applyTop("#requisitos","#obj");
             $("#autor").applyTop("#requisitos","#custos");
             $("#metodologia").applyTop("#requisitos","#custos");
+
+
+            //SORTABLE============================
+            $( "ul.receberpostit" ).sortable({
+              connectWith: "ul"
+            });
+            $( ".receberpostit" ).disableSelection();
+
+            //EXPAND===========================             
+            $(".postit").dblclick(function(){
+                $(this).expand();
+            });
+
+            
         });
     </script>
     
@@ -44,7 +59,7 @@
                 <ul class="receberpostit"></ul>
             </li>
             
-            <li id="stake" class="formatarea alignareas marginrightarea"><h1>STAKEHOLDERS</h1>
+            <li id="stake" class="formatarea alignareas marginrightarea"><h1>STAKEHOLDERS Externos & Fatores Externos</h1>
                 <ul class="receberpostit"></ul>
             </li>
             
@@ -92,42 +107,22 @@
         </ul>
     </li>
 
-    <li id="footer">
-        <ul>
-            <li id="autor">José Finocchio Júnior</li>
-            <li id="metodologia">Project Model Canvas</li>
-        </ul>
-    </li>
+<!--    <li id="footer">-->
+<!--        <ul>-->
+<!--            <li id="autor">José Finocchio Júnior</li>-->
+<!--            <li id="metodologia">Project Model Canvas</li>-->
+<!--        </ul>-->
+<!--    </li>-->
     
 </ul>
  
-<ul id="postits" class="receberpostit">
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    <li id="postit">Filipe <a href="#" class="destacar">+</a></li>
-    
-</ul>
+<!--<ul id="postits" class="receberpostit">-->
+<!--    <li postit-id="1" class="postit">Filipe Arantes Fernandes 1</li>-->
+<!--    <li postit-id="2" class="postit">Filipe Arantes Fernandes 2</li>-->
+<!--    <li postit-id="3" class="postit">Filipe Arantes Fernandes 3</li>-->
+<!--    <li postit-id="4" class="postit">Filipe Arantes Fernandes 4</li>-->
+<!--    <li postit-id="5" class="postit">Filipe Arantes Fernandes 5</li> -->
+<!--</ul>-->
 
 
 </body>
