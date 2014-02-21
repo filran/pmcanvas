@@ -1,0 +1,49 @@
+h1{ font-size: 12px; margin:0px; padding:0px; }
+
+ul{ list-style-type: none; margin:0px; padding:0px;}
+
+body{ font-family:"Arial"; }
+
+#pmcanvas{ width: 900px; height:675px; background-color:gray; padding:0.5%;}
+
+#header li{ float:left; height:4%; margin:0 0 0.5% 0;}
+#header h1{ font-size:1.16em; } /*1em = 12pt = 16px = 100%*/
+#gp{ width:40%; }
+#pitch{ width:60%; }
+
+#area{ clear:both; }
+
+#footer{ clear:both; margin:0.5% 0 0 0; }
+#autor, #metodologia{ float:left; background-color:#ccc; height:4%; }
+
+
+/*canvas's align */
+.alignareas{ float:left; }
+
+/* formatation pattern for each canvas's area
+solver width: {[100-(0.5*4)]/5} - 1 */
+.formatarea{ width:18.6%; background-color:white; padding:0.5%; position:relative;}
+
+/*formatation of height canvas's area*/
+/*1-> for top's*/
+#just, #prod{ height:25.2%; }
+#stake, #premissas, #riscos{ height:39% }
+
+/*2-> for middle's*/
+#obj{ height:19.2%; position:relative; background-color:orange; }
+#equipe, #entregas{ }
+
+/*3-> for bottom's*/
+#beneficios{ height:20%; position:relative;  }
+#restricoes{  }
+#cursos{  }
+
+
+/*margin right of each canva's area*/
+.marginrightarea{ margin:0 0.5% 0 0; }
+
+/*margin top and bottom for middle's area*/
+.margintopandbottomarea{ margin-top:0.5% ; margin-bottom:0.5%; }
+
+.margintoparea{ margin-top:0.5% ; }
+
