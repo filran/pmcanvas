@@ -13,7 +13,7 @@ body{ font-family:"Arial"; }
 
 #area{ clear:both; }
 
-#footer{ clear:both; margin:0.5% 0 0 0; }
+#footer{ clear:both; margin:0.5% 0 0 0; position:relative; }
 #autor, #metodologia{ float:left; background-color:#ccc; height:4%; }
 
 
@@ -26,17 +26,18 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 
 /*formatation of height canvas's area*/
 /*1-> for top's*/
-#just, #prod{ height:25.2%; }
-#stake, #premissas, #riscos{ height:39% }
+#just , #prod{ height:25.5%; }
+#stake, #premissas, #riscos{ height:32.5% }
 
 /*2-> for middle's*/
-#obj{ height:19.2%; position:relative; background-color:orange; }
-#equipe, #entregas{ }
+#obj{ height:19.5%; position:relative; background-color:orange; }
+#equipe, #entregas{ height:41.5%; } /*total 81.5 - era 55% - tirei 12*/
+#requisitos{ height:62%; background-color:green;}
 
 /*3-> for bottom's*/
-#beneficios{ height:20%; position:relative;  }
-#restricoes{  }
-#cursos{  }
+#beneficios{ height:10%; position:relative; left:-300; }
+#restricoes{ height:11.5%; }
+#custos{ height:11.5%; }
 
 
 /*margin right of each canva's area*/
