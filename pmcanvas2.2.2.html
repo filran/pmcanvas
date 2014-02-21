@@ -8,15 +8,16 @@
     <script type="text/javascript" src="scripts/jquery-ui/jquery-ui-1.10.4.custom.js"></script>
     <script type="text/javascript" src="scripts/plugins/zoom.js"></script>
     <script type="text/javascript" src="scripts/plugins/applyTop.js"></script>
-    <script type="text/javascript" src="scripts/plugins/applyLeft.js"></script>
     <script type="text/javascript">
         $(function(){
             /*applying top*/
             $("#obj").applyTop("#just","#stake");
             $("#requisitos").applyTop("#just","#stake");
-            $("#beneficios").applyTop("#equipe","#obj");
-
-            //$("#beneficios").applyLeft("#just");
+            $("#beneficios").applyTop("#equipe","#obj"); //-149 | dif=46 | 30.87%
+            $("#restricoes").applyTop("#requisitos","#obj");
+            $("#custos").applyTop("#requisitos","#obj");
+            $("#autor").applyTop("#requisitos","#custos");
+            $("#metodologia").applyTop("#requisitos","#custos");
         });
     </script>
     
@@ -24,11 +25,7 @@
     <link type="text/css" href="styles/canvas.css" rel="stylesheet" />
         
 </head>
-<body>
-
-<a href="#" class="aumentar">Aumentar</a>
-<a href="#" class="diminuir">Diminuir</a>
- 
+<body> 
 <ul id="pmcanvas">
     <li id="header">
         <ul>

@@ -1,20 +1,21 @@
-h1{ font-size: 12px; margin:0px; padding:0px; }
-
 ul{ list-style-type: none; margin:0px; padding:0px;}
 
-body{ font-family:"Arial"; }
+body{ font-family:"Arial"; font-size:0.75em; margin:0; }
 
-#pmcanvas{ width: 900px; height:675px; background-color:gray; padding:0.5%;}
+#pmcanvas{ width: 800px; height:566px; background-color:gray; padding:0.5%;}
 
 #header li{ float:left; height:4%; margin:0 0 0.5% 0;}
-#header h1{ font-size:1.16em; } /*1em = 12pt = 16px = 100%*/
+#header h1{ font-size:1.16em; margin:1% 0 0 ;} /*1em = 12pt = 16px = 100%*/
 #gp{ width:40%; }
 #pitch{ width:60%; }
 
 #area{ clear:both; }
+#area h1{ font-size: 1.2em; margin:0px; padding:0px; }
 
-#footer{ clear:both; margin:0.5% 0 0 0; position:relative; }
-#autor, #metodologia{ float:left; background-color:#ccc; height:4%; }
+#footer{ clear:both; margin:0.5% 0 0 0; }
+#autor, #metodologia{position:relative;}
+#autor{ left:-59.8%; font-size:0.72em; margin:0.6% 0 0 0; float:left;}
+#metodologia{ margin:0.4% 0 0 0; font-size:1.2em; font-weight:bold; float:right;}
 
 
 /*canvas's align */
@@ -30,14 +31,15 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 #stake, #premissas, #riscos{ height:32.5% }
 
 /*2-> for middle's*/
-#obj{ height:19.5%; position:relative; background-color:orange; }
-#equipe, #entregas{ height:41.5%; } /*total 81.5 - era 55% - tirei 12*/
-#requisitos{ height:62%; background-color:green;}
+#obj{ height:19.5%; position:relative; }
+#equipe, #entregas{ height:38.5%; } /*total 81.5 - era 55% - tirei 12*/
+#requisitos{ height:62%;}
+#tempo{ height:34%; }
 
 /*3-> for bottom's*/
-#beneficios{ height:10%; position:relative; left:-300; }
-#restricoes{ height:11.5%; }
-#custos{ height:11.5%; }
+#beneficios{ height:40.5%; position:relative; left:-40.2%}
+#restricoes{ height:14.4%; left:40.2%; width:38.7%; position:relative; }
+#custos{ height:18.8%; position:relative; left:40.2%;}
 
 
 /*margin right of each canva's area*/
