@@ -9,18 +9,26 @@
     <script type="text/javascript" src="scripts/plugins/zoom.js"></script>
     <script type="text/javascript" src="scripts/plugins/applyTop.js"></script>
     <script type="text/javascript" src="scripts/plugins/expand.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            /*applying top*/
-            $("#obj").applyTop("#just","#stake");
-            $("#requisitos").applyTop("#just","#stake");
-            $("#beneficios").applyTop("#equipe","#obj"); //-149 | dif=46 | 30.87%
-            $("#restricoes").applyTop("#requisitos","#obj");
-            $("#custos").applyTop("#requisitos","#obj");
-            $("#autor").applyTop("#requisitos","#custos");
-            $("#metodologia").applyTop("#requisitos","#custos");
+    <script type="text/javascript">    
+        $(function(){   
+            /*open and exit fullscrenn*/
+            function openfullscreen(){
+                $("body").fullscreen();
+                return false;
+            }
 
+            function closefullscreen(){
+                $.fullscreen.exit();
+                return false;
+            }         
+            openfullscreen();
+        
+            applyingTop();
 
+            /*w = screen.width-10;
+            h = screen.height;
+            $("#pmcanvas").css({"width":w,"height":h});*/
+    
             //SORTABLE============================
             $( "ul.receberpostit" ).sortable({
               connectWith: "ul"
@@ -30,10 +38,19 @@
             //EXPAND===========================             
             $(".postit").dblclick(function(){
                 $(this).expand();
-            });
-
-            
+            });            
         });
+
+        /*applying top*/
+        function applyingTop(){
+            $("#obj").applyTop("#just","#stake");
+            $("#requisitos").applyTop("#just","#stake");
+            $("#beneficios").applyTop("#equipe","#obj"); //-149 | dif=46 | 30.87%
+            $("#restricoes").applyTop("#requisitos","#obj");
+            $("#custos").applyTop("#requisitos","#obj");
+            $("#autor").applyTop("#requisitos","#custos");
+            $("#metodologia").applyTop("#requisitos","#custos");
+        }
     </script>
     
     <!--  STYLES  -->
@@ -41,6 +58,7 @@
         
 </head>
 <body> 
+<div id="screen">
 <ul id="pmcanvas">
     <li id="header">
         <ul>
@@ -107,24 +125,24 @@
         </ul>
     </li>
 
-<!--    <li id="footer">-->
-<!--        <ul>-->
-<!--            <li id="autor">José Finocchio Júnior</li>-->
-<!--            <li id="metodologia">Project Model Canvas</li>-->
-<!--        </ul>-->
-<!--    </li>-->
+    <li id="footer">
+        <ul>
+            <li id="autor">José Finocchio Júnior</li>
+            <li id="metodologia">Project Model Canvas</li>
+        </ul>
+    </li>
     
 </ul>
  
-<!--<ul id="postits" class="receberpostit">-->
-<!--    <li postit-id="1" class="postit">Filipe Arantes Fernandes 1</li>-->
-<!--    <li postit-id="2" class="postit">Filipe Arantes Fernandes 2</li>-->
-<!--    <li postit-id="3" class="postit">Filipe Arantes Fernandes 3</li>-->
-<!--    <li postit-id="4" class="postit">Filipe Arantes Fernandes 4</li>-->
-<!--    <li postit-id="5" class="postit">Filipe Arantes Fernandes 5</li> -->
-<!--</ul>-->
+<ul id="postits" class="receberpostit">
+    <li postit-id="1" class="postit">Filipe Arantes Fernandes 1</li>
+    <li postit-id="2" class="postit">Filipe Arantes Fernandes 2</li>
+    <li postit-id="3" class="postit">Filipe Arantes Fernandes 3</li>
+    <li postit-id="4" class="postit">Filipe Arantes Fernandes 4</li>
+    <li postit-id="5" class="postit">Filipe Arantes Fernandes 5</li> 
+</ul>
 
-
+</div>
 </body>
 
 

@@ -1,9 +1,10 @@
 /*LAYOUT STANDARD ======================= */
 ul{ list-style-type: none; margin:0px; padding:0px;}
 
-body{ font-family:"Arial"; font-size:0.7em; margin:0;}
+body{ font-family:"Arial"; font-size:0.7em; margin:0; overflow: hidden;}
 
-#pmcanvas{ width: 800px; height:566px; background-color:gray; padding:0.5%;}
+
+#pmcanvas{ background-color:gray; padding:0.5%; width:1014px; height:717px;}
 
 #header li{ float:left; height:4%; margin:0 0 0.5% 0;}
 #header h1{ font-size:1.16em; margin:1% 0 0 ;} /*1em = 12pt = 16px = 100%*/
@@ -32,7 +33,7 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 #tempo{ height:34%; }
 
 /*3-> for bottom's*/
-#beneficios{ height:40.5%; position:relative; left:-40.2%;}
+#beneficios{ height:40.5%; position:relative; left:-40.2%; }
 #restricoes{ height:14.4%; left:40.2%; width:38.7%; position:relative;}
 #custos{ height:18.8%; position:relative; left:40.2%;}
 
@@ -65,7 +66,7 @@ solver width: {[100-(0.5*4)]/5} - 1 */
 #custos .receberpostit{ height:85%; }
 
 
-#postits{ float:left; position:absolute; }
+#postits{ float:left; position:fixed; top:0; left:1000px; margin:0 0 0 0; padding:0; background-color:#ccc; width:400px; height:200px; }
 #area > ul > li .postit { width:97.3%; height:auto; margin:0 0 4px 0; padding:2px; }
 .postit:hover{ background-color:orange; cursor:pointer;}
 
@@ -76,14 +77,12 @@ solver width: {[100-(0.5*4)]/5} - 1 */
     background-color:yellow; 
     width:60%; 
     height:70%; 
-    top:13%;
+    top:10.5%;
     left:18%;
     opacity:0;
     padding:2%;
     font-size:1.5em;
 }
-
-
 
 /* SORTABLE'S STYLES ======================= */
 #area > ul > li > ul , #postits{

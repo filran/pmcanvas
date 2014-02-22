@@ -1,0 +1,12 @@
+<script type="text/javascript" src="scripts/jquery/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="scripts/plugins/jquery.fullscreen-master/release/jquery.fullscreen-0.4.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("a").click(function(){
+        $(this).fullscreen();
+        location.html( $(this).attr("href") );
+        return false;
+    });
+});
+</script>
+<a href="pmcanvas2.2.2.html">Abrir o canvas</a>
